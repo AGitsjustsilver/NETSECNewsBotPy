@@ -1,7 +1,7 @@
 {
-  "name": "easy-peasy-bot",
+  "name": "NETSEC-News-Bot",
   "version": "1.0.0",
-  "description": "The awesomest bot evar.",
+  "description": "The Best RSS a little club like ours could afford.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DEGoodmanWilson/easy-peasy-bot-app.git"
+    "url": "git+https://github.com/AGitsjustsilver/NETSECNewsBot.git"
   },
   "keywords": [
     "slack",
