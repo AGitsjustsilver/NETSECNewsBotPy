@@ -5,7 +5,8 @@ A python bot that listens to direct mentions for commands related to RSS feeds f
 Python 2.7  
 pip  
 virtualenv  
-Slack  
+Slack
+mySQL
 
 ## Using the Bot
 ### Installing 

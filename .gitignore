@@ -4,6 +4,9 @@ starterbot/
 # Emacs temp file
 *~
 
+# Dont want people to see JSON "database files"
+*.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
