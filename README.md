@@ -5,7 +5,7 @@ A python bot that listens to direct mentions for commands related to RSS feeds f
 Python 2.7  
 pip  
 virtualenv  
-Slack
+Slack  
 mySQL
 
 ## Using the Bot
@@ -14,6 +14,7 @@ mySQL
     virtualenv starterbot
     source starterbot/bin/activate
     pip install slackclient
+    pip install mysql-connector
     export SLACK_BOT_TOKEN='your bot user access token here'
 ```
 
