@@ -15,7 +15,7 @@ HELP_ARR = [
     {"recent": ["recent", "lists the five most recent articles from your feeds", " [id|URL|Title]"]},
     {"help":   ["help"  , "helps with this bot's commands", " [command]"]}
 ]
-
+RESPONSE = ""
 
 def add_feed(feed_URL=None):
     """
@@ -79,4 +79,9 @@ def cmd_help(command=None):
     Return:
        a tidy JSON string that displays how to use the command 
     """
-    
+    if command is None:
+        RESPONSE = ""
+    elif command is HELPCOMMANDS[command][0]:
+        RESPONSE = ""
+        
+    return RESPONSE;
