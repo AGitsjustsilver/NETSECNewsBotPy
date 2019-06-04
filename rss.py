@@ -65,7 +65,7 @@ def list_recent(identifier=None, amount=5):
                  The default amount of articles that will be produced is 5
     Returns:
        A tidy string of JSON that lists the articles, if the amount is more
-       than 4000 characters then i need to figure out what to do with it
+       than 40000 characters then i need to figure out what to do with it
     """
     
 def cmd_help(command=None):
