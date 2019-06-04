@@ -8,14 +8,11 @@ charcters as to comply to Slack's api chat.postMessage command
 Utils: Will probably use the mysql module I will make
 """
 
-def add_feed(feed_URL, feed_id=None, feed_title=None):
+def add_feed(feed_URL):
     """
     Description: Adds to the feed to the database
     Argument(s): 
     feed_URL   - The http(s):// URL to the feed that you wish to pull from
-    feed_id    - Default to None will generate an id, else user given int id
-    feed_title - Defalt to None will see if it can pull a title from feed,
-                 else will set the title to the main domain of the feed
     Returns:
        a composite string of tidy JSON to post to the channel if the addition
        was successful or not
