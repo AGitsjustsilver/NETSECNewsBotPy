@@ -8,7 +8,16 @@ charcters as to comply to Slack's api chat.postMessage command
 Utils: Will probably use the mysql module I will make
 """
 
-def add_feed(feed_URL):
+HELP_ARR = [
+    {"add":    ["add"   , "adds an RSS feed to get articles from", " [URL]"]},
+    {"remove": ["remove", "removes an RSS feed by a URL or its' id", " [id|URL]"]},
+    {"list":   ["list"  , "lists all currently subscribed feeds", " []"]},
+    {"recent": ["recent", "lists the five most recent articles from your feeds", " [id|URL|Title]"]},
+    {"help":   ["help"  , "helps with this bot's commands", " [command]"]}
+]
+
+
+def add_feed(feed_URL=None):
     """
     Description: Adds to the feed to the database
     Argument(s): 
@@ -18,11 +27,14 @@ def add_feed(feed_URL):
        was successful or not
     """
 
-def remove_feed(feed_id):
+def remove_feed(feed_id=None, feed_URL=None):
     """
-    Description: Removes the given feed_id from the database
+    Description: Removes the given feed_id, or  from the database
     Argument(s):
     feed_id    - an existing feed id from the database to remove from the
+                 feeds database and it's corresponding articles from the
+                 articles db
+    feed_url   - an existing feed URL from the database to remove from the
                  feeds database and it's corresponding articles from the
                  articles db
     Returns:
@@ -67,3 +79,4 @@ def cmd_help(command=None):
     Return:
        a tidy JSON string that displays how to use the command 
     """
+    
